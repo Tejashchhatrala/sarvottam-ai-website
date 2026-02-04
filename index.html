@@ -10,51 +10,81 @@
     <style>
         body { font-family: 'Hind Vadodara', sans-serif; }
         .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
-        .gradient-text { background: linear-gradient(to right, #2563EB, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text { background: linear-gradient(to right, #f97316, #ea580c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .cert-card:hover { transform: translateY(-5px); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-white text-slate-800">
 
     <nav class="fixed w-full z-50 glass-effect shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-800">Sarvottam<span class="text-purple-600">AI</span></div>
-            <a href="#consultation" class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
-                ફ્રી ડેમો બુક કરો
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-4 justify-between items-center">
+            <div class="text-2xl font-bold text-orange-600">Sarvottam<span class="text-slate-800">AI</span></div>
+            <div class="flex items-center gap-2 text-sm">
+                <button id="langGu" class="px-3 py-1 rounded-full bg-orange-100 text-orange-700 font-semibold">ગુજરાતી</button>
+                <button id="langEn" class="px-3 py-1 rounded-full border border-orange-200 text-orange-700 font-semibold">English</button>
+            </div>
+            <a href="#consultation" class="bg-orange-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-orange-700 transition" data-i18n="nav_cta">
+                મફત પરામર્શ મેળવો
             </a>
         </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-4 bg-gradient-to-b from-blue-50 to-white text-center">
+    <header class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white text-center">
         <div class="max-w-4xl mx-auto">
-            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6">
-                🎓 વિદ્યાર્થીઓ અને ફ્રેશર્સ માટે ખાસ
+            <span class="inline-block py-1 px-3 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold mb-6" data-i18n="hero_badge">
+                🎯 Career Growth for Students
             </span>
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                AI શીખો, <span class="gradient-text">તમારું ભવિષ્ય સુરક્ષિત કરો</span>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6" data-i18n="hero_title">
+                AI શીખો, <span class="gradient-text">કરિયરમાં આગવું બનો</span>
             </h1>
-            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                30 દિવસમાં Generative AI શીખો અને <strong>Google, Microsoft & Oracle Certified</strong> એક્સપર્ટ 
-                તેજસ છત્રાલા સાથે તમારી ડ્રીમ જોબ મેળવો.
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto" data-i18n="hero_subtitle">
+                30 દિવસમાં Generative AI શીખો અને Google, Microsoft અને Oracle સર્ટિફાઈડ AI એક્સપર્ટ
+                તેજસ છત્રાળા સાથે તમારી કારકિર્દીને મજબૂત બનાવો.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#consultation" class="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition hover:-translate-y-1">
-                    મારું ફ્રી કન્સલ્ટેશન બુક કરો 👉
+                <a href="#consultation" class="bg-orange-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition hover:-translate-y-1" data-i18n="hero_primary">
+                    મફત 1-on-1 કન્સલ્ટેશન બુક કરો 👉
                 </a>
-                <a href="#certifications" class="bg-white text-blue-700 border border-blue-200 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition">
+                <a href="#certifications" class="bg-white text-orange-700 border border-orange-200 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-orange-50 transition" data-i18n="hero_secondary">
                     મારા સર્ટિફિકેટ્સ જુઓ
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="certifications" class="py-20 bg-white">
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="about_title">તમારા AI Mentor: તેજસ છત્રાળા</h2>
+                    <p class="text-gray-600 text-lg mb-6" data-i18n="about_bio">
+                        તેજસ છત્રાળા Google, Microsoft અને Gemini સર્ટિફાઈડ AI એક્સપર્ટ છે, જેઓ ટેકનોલોજી ક્ષેત્રે ૮ વર્ષનો બહોળો અનુભવ ધરાવે છે.
+                        તેઓ 'AI પાઠશાળા' ના સ્થાપક છે, જેનો મુખ્ય ઉદ્દેશ્ય વિદ્યાર્થીઓ અને પ્રોફેશનલ્સને સરળ ગુજરાતી ભાષામાં આધુનિક Generative AI શીખવવાનો છે.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-semibold" data-i18n="about_tag1">8+ Years Experience</span>
+                        <span class="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-semibold" data-i18n="about_tag2">AI Pathshala Founder</span>
+                        <span class="px-4 py-2 rounded-full bg-orange-50 text-orange-700 font-semibold" data-i18n="about_tag3">Gujarati-first Teaching</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="w-full max-w-sm rounded-2xl bg-gradient-to-br from-orange-100 via-white to-orange-50 border border-orange-100 shadow-xl p-8 text-center">
+                        <div class="w-24 h-24 rounded-full bg-orange-200 text-orange-700 font-bold text-3xl flex items-center justify-center mx-auto">TC</div>
+                        <h3 class="mt-4 text-xl font-bold text-gray-900" data-i18n="about_card_title">Tejas Chhatrala</h3>
+                        <p class="text-gray-600" data-i18n="about_card_subtitle">AI Expert & Mentor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="py-20 bg-white border-t border-orange-100">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900">Verified Global Certifications</h2>
-                <p class="text-gray-600 mt-2">હું જે શીખવું છું, તેમાં હું સર્ટિફાઈડ એક્સપર્ટ છું.</p>
+                <h2 class="text-3xl font-bold text-gray-900" data-i18n="cert_title">Verified Global Certifications</h2>
+                <p class="text-gray-600 mt-2" data-i18n="cert_subtitle">હું જે શીખવું છું, તેમાં હું સર્ટિફાઈડ એક્સપર્ટ છું.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
                     <img src="assets/cert-google-leader.png" alt="Google Cloud Generative AI Leader" class="w-full h-auto object-cover border-b">
@@ -107,119 +137,373 @@
         </div>
     </section>
 
-    <section class="py-20 bg-slate-50 border-t border-gray-200">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900">શું તમે પણ AI થી ગભરાવ છો?</h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-3 text-xl">✖</span>
-                            <p class="text-lg text-gray-600">"AI મારી નોકરી લઈ લેશે?" એવી ચિંતા થાય છે?</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-3 text-xl">✖</span>
-                            <p class="text-lg text-gray-600">તમને લાગે છે કે AI શીખવા માટે કોડિંગ આવડવું જરૂરી છે?</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-3 text-xl">✖</span>
-                            <p class="text-lg text-gray-600">તમારા રિઝ્યુમમાં "AI Skills" નથી એટલે ઇન્ટરવ્યુમાં રિજેક્ટ થાવ છો?</p>
-                        </li>
-                    </ul>
-                    <div class="mt-8 p-6 bg-green-50 rounded-xl border border-green-100">
-                        <h3 class="text-xl font-bold text-green-800 mb-2">સમાધાન: AI Pathshala</h3>
-                        <p class="text-green-700">અમે તમને 0 થી Hero બનાવીશું. કોઈ કોડિંગની જરૂર નથી. માત્ર 30 દિવસમાં પ્રેક્ટિકલ AI શીખો.</p>
-                    </div>
-                </div>
-                <div class="order-1 md:order-2 flex items-center justify-center">
-                   <img src="assets/tejas-profile.png" alt="Tejas Chhatrala" class="rounded-2xl shadow-xl object-cover max-h-96 w-full">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="curriculum" class="py-20 bg-white">
+    <section id="highlights" class="py-20 bg-orange-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900">30 દિવસનો માસ્ટરી પ્રોગ્રામ</h2>
-                <p class="text-gray-600 mt-2">રોજ 1 કલાક લાઈવ ક્લાસ + પ્રેક્ટિકલ પ્રોજેક્ટ્સ</p>
+                <h2 class="text-3xl font-bold text-gray-900" data-i18n="course_title">30 દિવસનો માસ્ટરી પ્રોગ્રામ</h2>
+                <p class="text-gray-600 mt-2" data-i18n="course_subtitle">રોજ 60 મિનિટ લાઈવ ક્લાસ + પ્રેક્ટિકલ પ્રોજેક્ટ્સ</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-6">🤖</div>
-                    <h3 class="text-xl font-bold mb-3">AI Foundations & ChatGPT</h3>
-                    <p class="text-gray-600 mb-4">Prompt Engineering શીખો અને ChatGPT ને તમારો પર્સનલ આસિસ્ટન્ટ બનાવો.</p>
+                <div class="bg-white p-8 rounded-2xl border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl mb-6">📅</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="course_card1_title">30-Day Structured Course</h3>
+                    <p class="text-gray-600 mb-4" data-i18n="course_card1_body">દરરોજ લાઈવ ક્લાસ અને ટાસ્ક્સ સાથે step-by-step AI સ્કિલ્સ.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-6">🎨</div>
-                    <h3 class="text-xl font-bold mb-3">AI for Content & Design</h3>
-                    <p class="text-gray-600 mb-4">Midjourney અને Canva AI થી પ્રોફેશનલ ઈમેજીસ અને કન્ટેન્ટ બનાવતા શીખો.</p>
+                <div class="bg-white p-8 rounded-2xl border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl mb-6">🎯</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="course_card2_title">Career Growth Focused</h3>
+                    <p class="text-gray-600 mb-4" data-i18n="course_card2_body">Student projects, portfolio guidance, અને interview-ready AI confidence.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-xl mb-6">🚀</div>
-                    <h3 class="text-xl font-bold mb-3">Career & Business Growth</h3>
-                    <p class="text-gray-600 mb-4">તમારા વ્યવસાય અથવા જોબ માટે AI ઓટોમેશન અને Interview Preparation.</p>
+                <div class="bg-white p-8 rounded-2xl border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center text-xl mb-6">📞</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="course_card3_title">Parents + Student Consultation</h3>
+                    <p class="text-gray-600 mb-4" data-i18n="course_card3_body">Free 10–15 min guidance call for parents and student together.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="consultation" class="py-20 bg-blue-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-        <div class="max-w-lg mx-auto px-4 relative z-10">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold mb-4">ફ્રી 1-on-1 કન્સલ્ટેશન બુક કરો</h2>
-                <p class="text-blue-200">ફોર્મ ભરો અને સીધા મારી સાથે WhatsApp પર વાત કરો.</p>
+    <section id="audience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900" data-i18n="audience_title">આ કોણ માટે છે?</h2>
+                <p class="text-gray-600 mt-2" data-i18n="audience_subtitle">Career Growth માટે તૈયાર લોકો માટે શ્રેષ્ઠ માર્ગદર્શિકા.</p>
             </div>
-            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border border-orange-100 rounded-2xl p-6 text-center">
+                    <h3 class="text-xl font-bold mb-2" data-i18n="audience_card1_title">School Students</h3>
+                    <p class="text-gray-600" data-i18n="audience_card1_body">8th–12th grade, strong foundation for AI + future careers.</p>
+                </div>
+                <div class="border border-orange-100 rounded-2xl p-6 text-center">
+                    <h3 class="text-xl font-bold mb-2" data-i18n="audience_card2_title">College Students</h3>
+                    <p class="text-gray-600" data-i18n="audience_card2_body">Projects, internships, and AI-ready resume building.</p>
+                </div>
+                <div class="border border-orange-100 rounded-2xl p-6 text-center">
+                    <h3 class="text-xl font-bold mb-2" data-i18n="audience_card3_title">Career Starters</h3>
+                    <p class="text-gray-600" data-i18n="audience_card3_body">Freshers and job seekers who want AI edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consultation" class="py-20 bg-orange-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-2xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-4" data-i18n="form_title">મફત 10–15 મિનિટ કન્સલ્ટેશન બુક કરો</h2>
+                <p class="text-orange-100" data-i18n="form_subtitle">ફોર્મ ભરો, તમારી માહિતી સેવ થશે, અને પછી WhatsApp પર ડાયરેક્ટ વાત કરો.</p>
+            </div>
+
             <div class="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl">
                 <form id="leadForm" onsubmit="handleLead(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">તમારું નામ</label>
-                        <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="દા.ત. રાહુલ પટેલ">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_student_name">વિદ્યાર્થીનું નામ</label>
+                            <input type="text" id="studentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_student" placeholder="દા.ત. પ્રીતિ પટેલ">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_parent_name">વાલીનું નામ</label>
+                            <input type="text" id="parentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_parent" placeholder="દા.ત. રજેશ પટેલ">
+                        </div>
                     </div>
-                    
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">મોબાઈલ નંબર</label>
-                        <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="98765 43210">
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_phone">મોબાઈલ નંબર</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_phone" placeholder="98797 37819">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_city">શહેર</label>
+                            <input type="text" id="city" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_city" placeholder="સુરત">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_grade">ધોરણ / વર્ષ</label>
+                            <input type="text" id="grade" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_grade" placeholder="10th / FYBCA">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_age">ઉમર</label>
+                            <input type="number" id="age" min="8" max="40" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_age" placeholder="15">
+                        </div>
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">તમે શું કરો છો?</label>
-                        <select id="role" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="Student">વિદ્યાર્થી (Student)</option>
-                            <option value="Professional">નોકરીયાત (Job)</option>
-                            <option value="Business">વ્યાપારી (Business)</option>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_status">વિદ્યાર્થીનો વર્તમાન સ્ટેટસ</label>
+                        <select id="status" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
+                            <option value="School" data-i18n="status_school">School Student</option>
+                            <option value="College" data-i18n="status_college">College Student</option>
+                            <option value="Fresher" data-i18n="status_fresher">Fresher / Job Seeker</option>
+                            <option value="Professional" data-i18n="status_professional">Working Professional</option>
+                        </select>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_goal">મુખ્ય લક્ષ્ય</label>
+                            <select id="goal" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
+                                <option value="Career" data-i18n="goal_career">Career Growth</option>
+                                <option value="Skills" data-i18n="goal_skills">AI Skills + Projects</option>
+                                <option value="College" data-i18n="goal_college">College / Internship Prep</option>
+                                <option value="Explore" data-i18n="goal_explore">Just Exploring</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_timeline">શરુઆત ક્યારે કરવી છે?</label>
+                            <select id="timeline" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
+                                <option value="Immediately" data-i18n="timeline_now">Immediately</option>
+                                <option value="ThisMonth" data-i18n="timeline_month">This Month</option>
+                                <option value="NextMonth" data-i18n="timeline_next">Next 1-3 Months</option>
+                                <option value="Later" data-i18n="timeline_later">Just Exploring</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_interest">ઇન્ટરેસ્ટ લેવલ</label>
+                        <select id="interest" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
+                            <option value="Hot" data-i18n="interest_hot">Ready to Join (Hot)</option>
+                            <option value="Warm" data-i18n="interest_warm">Interested (Warm)</option>
+                            <option value="Cold" data-i18n="interest_cold">Just Exploring (Cold)</option>
                         </select>
                     </div>
 
                     <button type="submit" class="w-full bg-green-600 text-white font-bold py-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center gap-2">
-                        <span>WhatsApp પર કનેક્ટ કરો</span>
+                        <span data-i18n="form_cta">WhatsApp પર કનેક્ટ કરો</span>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     </button>
-                    <p class="text-xs text-center text-gray-500 mt-2">તમારી માહિતી 100% સુરક્ષિત છે.</p>
+                    <p class="text-xs text-center text-gray-500 mt-2" data-i18n="form_note">તમારી માહિતી સુરક્ષિત રીતે સેવ થશે. WhatsApp નહીં મોકલો તો પણ લીડ Google Sheet માં રહી જશે.</p>
                 </form>
             </div>
         </div>
     </section>
 
     <footer class="bg-gray-900 text-gray-400 py-8 text-center">
-        <p>&copy; 2026 Sarvottam AI Pathshala. All rights reserved.</p>
-        <p class="text-sm mt-2">Designed for the Future of Gujarat.</p>
+        <p>&copy; 2025 Sarvottam AI Pathshala. All rights reserved.</p>
+        <p class="text-sm mt-2" data-i18n="footer_tagline">Designed for the Future of Gujarat.</p>
     </footer>
 
     <script>
+        const translations = {
+            gu: {
+                nav_cta: "મફત પરામર્શ મેળવો",
+                hero_badge: "🎯 Career Growth for Students",
+                hero_title: "AI શીખો, <span class=\"gradient-text\">કરિયરમાં આગવું બનો</span>",
+                hero_subtitle: "30 દિવસમાં Generative AI શીખો અને Google, Microsoft અને Oracle સર્ટિફાઈડ AI એક્સપર્ટ તેજસ છત્રાળા સાથે તમારી કારકિર્દીને મજબૂત બનાવો.",
+                hero_primary: "મફત 1-on-1 કન્સલ્ટેશન બુક કરો 👉",
+                hero_secondary: "મારા સર્ટિફિકેટ્સ જુઓ",
+                about_title: "તમારા AI Mentor: તેજસ છત્રાળા",
+                about_bio: "તેજસ છત્રાળા Google, Microsoft અને Gemini સર્ટિફાઈડ AI એક્સપર્ટ છે, જેઓ ટેકનોલોજી ક્ષેત્રે ૮ વર્ષનો બહોળો અનુભવ ધરાવે છે. તેઓ 'AI પાઠશાળા' ના સ્થાપક છે, જેનો મુખ્ય ઉદ્દેશ્ય વિદ્યાર્થીઓ અને પ્રોફેશનલ્સને સરળ ગુજરાતી ભાષામાં આધુનિક Generative AI શીખવવાનો છે.",
+                about_tag1: "8+ Years Experience",
+                about_tag2: "AI Pathshala Founder",
+                about_tag3: "Gujarati-first Teaching",
+                about_card_title: "Tejas Chhatrala",
+                about_card_subtitle: "AI Expert & Mentor",
+                cert_title: "Verified Global Certifications",
+                cert_subtitle: "હું જે શીખવું છું, તેમાં હું સર્ટિફાઈડ એક્સપર્ટ છું.",
+                course_title: "30 દિવસનો માસ્ટરી પ્રોગ્રામ",
+                course_subtitle: "રોજ 60 મિનિટ લાઈવ ક્લાસ + પ્રેક્ટિકલ પ્રોજેક્ટ્સ",
+                course_card1_title: "30-Day Structured Course",
+                course_card1_body: "દરરોજ લાઈવ ક્લાસ અને ટાસ્ક્સ સાથે step-by-step AI સ્કિલ્સ.",
+                course_card2_title: "Career Growth Focused",
+                course_card2_body: "Student projects, portfolio guidance, અને interview-ready AI confidence.",
+                course_card3_title: "Parents + Student Consultation",
+                course_card3_body: "Free 10–15 min guidance call for parents and student together.",
+                audience_title: "આ કોણ માટે છે?",
+                audience_subtitle: "Career Growth માટે તૈયાર લોકો માટે શ્રેષ્ઠ માર્ગદર્શિકા.",
+                audience_card1_title: "School Students",
+                audience_card1_body: "8th–12th grade, strong foundation for AI + future careers.",
+                audience_card2_title: "College Students",
+                audience_card2_body: "Projects, internships, and AI-ready resume building.",
+                audience_card3_title: "Career Starters",
+                audience_card3_body: "Freshers and job seekers who want AI edge.",
+                form_title: "મફત 10–15 મિનિટ કન્સલ્ટેશન બુક કરો",
+                form_subtitle: "ફોર્મ ભરો, તમારી માહિતી સેવ થશે, અને પછી WhatsApp પર ડાયરેક્ટ વાત કરો.",
+                field_student_name: "વિદ્યાર્થીનું નામ",
+                field_parent_name: "વાલીનું નામ",
+                field_phone: "મોબાઈલ નંબર",
+                field_city: "શહેર",
+                field_grade: "ધોરણ / વર્ષ",
+                field_age: "ઉમર",
+                field_status: "વિદ્યાર્થીનો વર્તમાન સ્ટેટસ",
+                field_goal: "મુખ્ય લક્ષ્ય",
+                field_timeline: "શરુઆત ક્યારે કરવી છે?",
+                field_interest: "ઇન્ટરેસ્ટ લેવલ",
+                status_school: "School Student",
+                status_college: "College Student",
+                status_fresher: "Fresher / Job Seeker",
+                status_professional: "Working Professional",
+                goal_career: "Career Growth",
+                goal_skills: "AI Skills + Projects",
+                goal_college: "College / Internship Prep",
+                goal_explore: "Just Exploring",
+                timeline_now: "Immediately",
+                timeline_month: "This Month",
+                timeline_next: "Next 1-3 Months",
+                timeline_later: "Just Exploring",
+                interest_hot: "Ready to Join (Hot)",
+                interest_warm: "Interested (Warm)",
+                interest_cold: "Just Exploring (Cold)",
+                form_cta: "WhatsApp પર કનેક્ટ કરો",
+                form_note: "તમારી માહિતી સુરક્ષિત રીતે સેવ થશે. WhatsApp નહીં મોકલો તો પણ લીડ Google Sheet માં રહી જશે.",
+                footer_tagline: "Designed for the Future of Gujarat.",
+                placeholder_student: "દા.ત. પ્રીતિ પટેલ",
+                placeholder_parent: "દા.ત. રજેશ પટેલ",
+                placeholder_phone: "98797 37819",
+                placeholder_city: "સુરત",
+                placeholder_grade: "10th / FYBCA",
+                placeholder_age: "15"
+            },
+            en: {
+                nav_cta: "Get Free Consultation",
+                hero_badge: "🎯 Career Growth for Students",
+                hero_title: "Learn AI, <span class=\"gradient-text\">Lead Your Career</span>",
+                hero_subtitle: "Master Generative AI in 30 days with Google, Microsoft, and Oracle certified AI expert Tejas Chhatrala to build your future.",
+                hero_primary: "Book a Free 1-on-1 Consultation 👉",
+                hero_secondary: "View Certifications",
+                about_title: "Your AI Mentor: Tejas Chhatrala",
+                about_bio: "Tejas Chhatrala is a Google, Microsoft, and Gemini certified AI expert with 8 years of experience in technology. He is the founder of 'AI Pathshala' focused on teaching modern Generative AI in simple Gujarati for students and professionals.",
+                about_tag1: "8+ Years Experience",
+                about_tag2: "AI Pathshala Founder",
+                about_tag3: "Gujarati-first Teaching",
+                about_card_title: "Tejas Chhatrala",
+                about_card_subtitle: "AI Expert & Mentor",
+                cert_title: "Verified Global Certifications",
+                cert_subtitle: "I teach only what I am certified to deliver.",
+                course_title: "30-Day Mastery Program",
+                course_subtitle: "Daily 60-minute live class + practical projects",
+                course_card1_title: "30-Day Structured Course",
+                course_card1_body: "Daily live classes and tasks for step-by-step AI skills.",
+                course_card2_title: "Career Growth Focused",
+                course_card2_body: "Student projects, portfolio guidance, and interview-ready AI confidence.",
+                course_card3_title: "Parents + Student Consultation",
+                course_card3_body: "Free 10–15 min guidance call for parents and student together.",
+                audience_title: "Who is this for?",
+                audience_subtitle: "Perfect for learners ready for career growth.",
+                audience_card1_title: "School Students",
+                audience_card1_body: "8th–12th grade, strong foundation for AI + future careers.",
+                audience_card2_title: "College Students",
+                audience_card2_body: "Projects, internships, and AI-ready resume building.",
+                audience_card3_title: "Career Starters",
+                audience_card3_body: "Freshers and job seekers who want AI edge.",
+                form_title: "Book a Free 10–15 Minute Consultation",
+                form_subtitle: "Fill the form, your details will be saved, then connect on WhatsApp.",
+                field_student_name: "Student Name",
+                field_parent_name: "Parent Name",
+                field_phone: "Phone Number",
+                field_city: "City",
+                field_grade: "Grade / Year",
+                field_age: "Age",
+                field_status: "Current Status",
+                field_goal: "Primary Goal",
+                field_timeline: "When do you want to start?",
+                field_interest: "Interest Level",
+                status_school: "School Student",
+                status_college: "College Student",
+                status_fresher: "Fresher / Job Seeker",
+                status_professional: "Working Professional",
+                goal_career: "Career Growth",
+                goal_skills: "AI Skills + Projects",
+                goal_college: "College / Internship Prep",
+                goal_explore: "Just Exploring",
+                timeline_now: "Immediately",
+                timeline_month: "This Month",
+                timeline_next: "Next 1-3 Months",
+                timeline_later: "Just Exploring",
+                interest_hot: "Ready to Join (Hot)",
+                interest_warm: "Interested (Warm)",
+                interest_cold: "Just Exploring (Cold)",
+                form_cta: "Connect on WhatsApp",
+                form_note: "Your details are saved securely. Even if you don't send WhatsApp, the lead stays in Google Sheets.",
+                footer_tagline: "Designed for the Future of Gujarat.",
+                placeholder_student: "e.g., Preeti Patel",
+                placeholder_parent: "e.g., Rajesh Patel",
+                placeholder_phone: "98797 37819",
+                placeholder_city: "Surat",
+                placeholder_grade: "10th / FYBCA",
+                placeholder_age: "15"
+            }
+        };
+
+        const setLanguage = (lang) => {
+            document.documentElement.lang = lang;
+            const nodes = document.querySelectorAll('[data-i18n]');
+            nodes.forEach((node) => {
+                const key = node.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    node.innerHTML = translations[lang][key];
+                }
+            });
+            const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+            placeholders.forEach((node) => {
+                const key = node.getAttribute('data-i18n-placeholder');
+                if (translations[lang][key]) {
+                    node.setAttribute('placeholder', translations[lang][key]);
+                }
+            });
+        };
+
+        document.getElementById('langGu').addEventListener('click', () => {
+            setLanguage('gu');
+            document.getElementById('langGu').classList.add('bg-orange-100');
+            document.getElementById('langEn').classList.remove('bg-orange-100');
+        });
+        document.getElementById('langEn').addEventListener('click', () => {
+            setLanguage('en');
+            document.getElementById('langEn').classList.add('bg-orange-100');
+            document.getElementById('langGu').classList.remove('bg-orange-100');
+        });
+
+        const leadWebhookUrl = "";
+
         function handleLead(e) {
             e.preventDefault();
-            const name = document.getElementById('name').value;
+            const studentName = document.getElementById('studentName').value;
+            const parentName = document.getElementById('parentName').value;
             const phone = document.getElementById('phone').value;
-            const role = document.getElementById('role').value;
-            const message = `નમસ્તે તેજસભાઈ, મારું નામ *${name}* છે અને હું *${role}* છું. મારે Sarvottam AI Pathshala માટે ફ્રી કન્સલ્ટેશન બુક કરવું છે.`;
+            const city = document.getElementById('city').value;
+            const grade = document.getElementById('grade').value;
+            const age = document.getElementById('age').value;
+            const status = document.getElementById('status').value;
+            const goal = document.getElementById('goal').value;
+            const timeline = document.getElementById('timeline').value;
+            const interest = document.getElementById('interest').value;
+
+            const payload = {
+                studentName,
+                parentName,
+                phone,
+                city,
+                grade,
+                age,
+                status,
+                goal,
+                timeline,
+                interest,
+                submittedAt: new Date().toISOString()
+            };
+
+            if (leadWebhookUrl) {
+                fetch(leadWebhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+            }
+
+            const lang = document.documentElement.lang === 'en' ? 'en' : 'gu';
+            const messageGu = `નમસ્તે! હું ${studentName} છું, ${city} થી. મારે AI કોર્સ માટે મફત પરામર્શ જોઈએ છે. ધોરણ/વર્ષ: ${grade}, ઉમર: ${age}. Parent: ${parentName}.`;
+            const messageEn = `Hello! I am ${studentName} from ${city}. I want a free AI course consultation. Grade/Year: ${grade}, Age: ${age}. Parent: ${parentName}.`;
+            const message = lang === 'en' ? messageEn : messageGu;
+
             const encodedMsg = encodeURIComponent(message);
-            const myNumber = "919726684248"; 
+            const myNumber = "919879737819";
             const whatsappURL = `https://wa.me/${myNumber}?text=${encodedMsg}`;
             window.location.href = whatsappURL;
         }
+
+        setLanguage('gu');
     </script>
 </body>
 </html>
