@@ -11,6 +11,7 @@
         body { font-family: 'Hind Vadodara', sans-serif; }
         .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .gradient-text { background: linear-gradient(to right, #2563EB, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .cert-card:hover { transform: translateY(-5px); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -33,27 +34,80 @@
                 AI શીખો, <span class="gradient-text">તમારું ભવિષ્ય સુરક્ષિત કરો</span>
             </h1>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                30 દિવસમાં Generative AI શીખો અને Google/Microsoft સર્ટિફાઈડ એક્સપર્ટ 
-                <strong>તેજસ છત્રાલા</strong> સાથે તમારી ડ્રીમ જોબ મેળવો.
+                30 દિવસમાં Generative AI શીખો અને <strong>Google, Microsoft & Oracle Certified</strong> એક્સપર્ટ 
+                તેજસ છત્રાલા સાથે તમારી ડ્રીમ જોબ મેળવો.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#consultation" class="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition hover:-translate-y-1">
                     મારું ફ્રી કન્સલ્ટેશન બુક કરો 👉
                 </a>
-                <a href="#curriculum" class="bg-white text-blue-700 border border-blue-200 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition">
-                    કોર્સની વિગતો જુઓ
+                <a href="#certifications" class="bg-white text-blue-700 border border-blue-200 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition">
+                    મારા સર્ટિફિકેટ્સ જુઓ
                 </a>
-            </div>
-            
-            <div class="mt-12 flex flex-wrap justify-center items-center gap-8 opacity-80 grayscale hover:grayscale-0 transition duration-500">
-                <img src="assets/google-cert.png" alt="Google Certified" class="h-12 object-contain">
-                <img src="assets/microsoft-cert.png" alt="Microsoft Certified" class="h-12 object-contain">
-                <span class="text-gray-400 font-semibold">Verified Expert</span>
             </div>
         </div>
     </header>
 
-    <section class="py-20 bg-white">
+    <section id="certifications" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Verified Global Certifications</h2>
+                <p class="text-gray-600 mt-2">હું જે શીખવું છું, તેમાં હું સર્ટિફાઈડ એક્સપર્ટ છું.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
+                    <img src="assets/cert-google-leader.png" alt="Google Cloud Generative AI Leader" class="w-full h-auto object-cover border-b">
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800">Google Cloud Certified</h3>
+                        <p class="text-sm text-gray-500">Generative AI Leader (2025)</p>
+                    </div>
+                </div>
+
+                <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
+                    <img src="assets/cert-gemini-educator.png" alt="Gemini Certified Educator" class="w-full h-auto object-cover border-b">
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800">Google for Education</h3>
+                        <p class="text-sm text-gray-500">Gemini Certified Educator</p>
+                    </div>
+                </div>
+
+                <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
+                    <img src="assets/cert-microsoft.png" alt="Microsoft AI Foundations" class="w-full h-auto object-cover border-b">
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800">Microsoft & upGrad</h3>
+                        <p class="text-sm text-gray-500">Generative AI Foundations</p>
+                    </div>
+                </div>
+
+                <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
+                    <img src="assets/cert-oracle.jpg" alt="Oracle Certified Professional" class="w-full h-auto object-cover border-b">
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800">Oracle University</h3>
+                        <p class="text-sm text-gray-500">Gen AI Professional 2025</p>
+                    </div>
+                </div>
+
+                <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
+                    <img src="assets/cert-anthropic-teaching.png" alt="Teaching AI Fluency" class="w-full h-auto object-cover border-b">
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800">Anthropic & UCC</h3>
+                        <p class="text-sm text-gray-500">Teaching the AI Fluency Framework</p>
+                    </div>
+                </div>
+
+                <div class="cert-card transition duration-300 border rounded-xl overflow-hidden shadow-sm hover:shadow-lg bg-white">
+                    <img src="assets/cert-anthropic-foundations.png" alt="AI Fluency Foundations" class="w-full h-auto object-cover border-b">
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800">Anthropic & UCC</h3>
+                        <p class="text-sm text-gray-500">AI Fluency Foundations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50 border-t border-gray-200">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
@@ -77,55 +131,34 @@
                         <p class="text-green-700">અમે તમને 0 થી Hero બનાવીશું. કોઈ કોડિંગની જરૂર નથી. માત્ર 30 દિવસમાં પ્રેક્ટિકલ AI શીખો.</p>
                     </div>
                 </div>
-                <div class="order-1 md:order-2 bg-gray-100 rounded-2xl h-80 flex items-center justify-center text-gray-400">
-                   <img src="assets/tejas-profile.png" alt="Tejas Chhatrala" class="rounded-2xl shadow-lg object-cover h-full w-full">
+                <div class="order-1 md:order-2 flex items-center justify-center">
+                   <img src="assets/tejas-profile.png" alt="Tejas Chhatrala" class="rounded-2xl shadow-xl object-cover max-h-96 w-full">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="curriculum" class="py-20 bg-slate-50">
+    <section id="curriculum" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900">30 દિવસનો માસ્ટરી પ્રોગ્રામ</h2>
                 <p class="text-gray-600 mt-2">રોજ 1 કલાક લાઈવ ક્લાસ + પ્રેક્ટિકલ પ્રોજેક્ટ્સ</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
                     <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mb-6">🤖</div>
                     <h3 class="text-xl font-bold mb-3">AI Foundations & ChatGPT</h3>
                     <p class="text-gray-600 mb-4">Prompt Engineering શીખો અને ChatGPT ને તમારો પર્સનલ આસિસ્ટન્ટ બનાવો.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
                     <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-6">🎨</div>
                     <h3 class="text-xl font-bold mb-3">AI for Content & Design</h3>
                     <p class="text-gray-600 mb-4">Midjourney અને Canva AI થી પ્રોફેશનલ ઈમેજીસ અને કન્ટેન્ટ બનાવતા શીખો.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
                     <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-xl mb-6">🚀</div>
                     <h3 class="text-xl font-bold mb-3">Career & Business Growth</h3>
                     <p class="text-gray-600 mb-4">તમારા વ્યવસાય અથવા જોબ માટે AI ઓટોમેશન અને Interview Preparation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-white border-y border-gray-100">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">તમારા મેન્ટર વિશે</h2>
-            <div class="flex flex-col md:flex-row items-center gap-8 text-left">
-                <img src="assets/tejas-profile.png" alt="Tejas Chhatrala" class="w-32 h-32 rounded-full object-cover shadow-lg mx-auto md:mx-0">
-                <div>
-                    <h3 class="text-2xl font-bold">Tejas Chhatrala</h3>
-                    <p class="text-blue-600 font-medium mb-4">Google & Microsoft Certified AI Expert | 8+ Years Experience</p>
-                    <p class="text-gray-600">
-                        મેં 8 વર્ષ કોર્પોરેટ જગતમાં કામ કર્યું છે અને હવે મારું મિશન છે ગુજરાતના દરેક વિદ્યાર્થીને AI સક્ષમ બનાવવાનું. 
-                        હું માત્ર થીયરી નહીં, પણ રિયલ-વર્લ્ડ સ્કિલ્સ શીખવું છું જે તમને નોકરી અપાવશે.
-                    </p>
-                    <div class="mt-4 flex gap-3">
-                        <span class="px-3 py-1 bg-gray-100 rounded text-sm">MBA Marketing</span>
-                        <span class="px-3 py-1 bg-gray-100 rounded text-sm">B.Tech Electrical</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -178,27 +211,13 @@
     <script>
         function handleLead(e) {
             e.preventDefault();
-            
-            // 1. Get Values
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const role = document.getElementById('role').value;
-
-            // 2. Construct WhatsApp Message (Gujarati)
-            // "Namaste Tejasbhai, my name is [Name] ([Role]). I want to book a free consultation for AI Pathshala."
             const message = `નમસ્તે તેજસભાઈ, મારું નામ *${name}* છે અને હું *${role}* છું. મારે Sarvottam AI Pathshala માટે ફ્રી કન્સલ્ટેશન બુક કરવું છે.`;
-
-            // 3. Encode for URL
             const encodedMsg = encodeURIComponent(message);
-            
-            // 4. Your Number (International Format without +)
             const myNumber = "919726684248"; 
-
-            // 5. Redirect
             const whatsappURL = `https://wa.me/${myNumber}?text=${encodedMsg}`;
-            
-            // Optional: Here you could add code to send this data to Google Sheets before redirecting
-            
             window.location.href = whatsappURL;
         }
     </script>
