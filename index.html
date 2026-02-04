@@ -382,39 +382,39 @@
                 <form id="leadForm" onsubmit="handleLead(event)" class="space-y-4">
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_student_name">વિદ્યાર્થીનું નામ</label>
+                            <label for="studentName" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_student_name">વિદ્યાર્થીનું નામ</label>
                             <input type="text" id="studentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_student" placeholder="દા.ત. પ્રીતિ પટેલ">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_parent_name">વાલીનું નામ</label>
+                            <label for="parentName" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_parent_name">વાલીનું નામ</label>
                             <input type="text" id="parentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_parent" placeholder="દા.ત. રજેશ પટેલ">
                         </div>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_phone">મોબાઈલ નંબર</label>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_phone">મોબાઈલ નંબર</label>
                             <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_phone" placeholder="98797 37819">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_city">શહેર</label>
+                            <label for="city" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_city">શહેર</label>
                             <input type="text" id="city" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_city" placeholder="સુરત">
                         </div>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_grade">ધોરણ / વર્ષ</label>
+                            <label for="grade" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_grade">ધોરણ / વર્ષ</label>
                             <input type="text" id="grade" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_grade" placeholder="10th / FYBCA">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_age">ઉમર</label>
+                            <label for="age" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_age">ઉમર</label>
                             <input type="number" id="age" min="8" max="40" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_age" placeholder="15">
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_status">વિદ્યાર્થીનો વર્તમાન સ્ટેટસ</label>
+                        <label for="status" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_status">વિદ્યાર્થીનો વર્તમાન સ્ટેટસ</label>
                         <select id="status" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
                             <option value="School" data-i18n="status_school">School Student</option>
                             <option value="College" data-i18n="status_college">College Student</option>
@@ -425,7 +425,7 @@
 
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_goal">મુખ્ય લક્ષ્ય</label>
+                            <label for="goal" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_goal">મુખ્ય લક્ષ્ય</label>
                             <select id="goal" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
                                 <option value="Career" data-i18n="goal_career">Career Growth</option>
                                 <option value="Skills" data-i18n="goal_skills">AI Skills + Projects</option>
@@ -434,7 +434,7 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_timeline">શરુઆત ક્યારે કરવી છે?</label>
+                            <label for="timeline" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_timeline">શરુઆત ક્યારે કરવી છે?</label>
                             <select id="timeline" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
                                 <option value="Immediately" data-i18n="timeline_now">Immediately</option>
                                 <option value="ThisMonth" data-i18n="timeline_month">This Month</option>
@@ -445,7 +445,7 @@
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_interest">ઇન્ટરેસ્ટ લેવલ</label>
+                        <label for="interest" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_interest">ઇન્ટરેસ્ટ લેવલ</label>
                         <select id="interest" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
                             <option value="Hot" data-i18n="interest_hot">Ready to Join (Hot)</option>
                             <option value="Warm" data-i18n="interest_warm">Interested (Warm)</option>
