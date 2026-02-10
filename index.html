@@ -10,526 +10,401 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/cert-google-leader.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sarvottam AI Pathshala | Smart Study & AI Coaching">
-    <meta name="twitter:description" content="Stop panic studying. Learn to use AI ethically for planning, understanding, and better grades in 30 days.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Hind Vadodara', sans-serif; }
         .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .gradient-text { background: linear-gradient(to right, #f97316, #ea580c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .cert-card:hover { transform: translateY(-5px); }
+        .card-hover:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
     </style>
 </head>
-<body class="bg-white text-slate-800">
+<body class="bg-slate-50 text-slate-900">
 
-    <nav class="fixed w-full z-50 glass-effect shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-4 justify-between items-center">
-            <div class="text-2xl font-bold text-orange-600">Sarvottam<span class="text-slate-800">AI</span></div>
-            <div class="flex items-center gap-2 text-sm">
-                <button id="langGu" class="px-3 py-1 rounded-full bg-orange-100 text-orange-700 font-semibold">ગુજરાતી</button>
-                <button id="langEn" class="px-3 py-1 rounded-full border border-orange-200 text-orange-700 font-semibold">English</button>
-            </div>
-            <a href="#offer" class="bg-orange-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-orange-700 transition" data-i18n="nav_cta">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-effect shadow-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-orange-600 tracking-tight">Sarvottam<span class="text-slate-900">AI</span></div>
+            <a href="#offer" class="bg-orange-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-orange-700 transition shadow-lg shadow-orange-200" data-i18n="nav_cta">
                 Book Free Consultation
             </a>
         </div>
     </nav>
 
-    <!-- 1. Above the Fold -->
-    <header class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <span class="inline-block py-1 px-3 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold mb-6" data-i18n="hero_eyebrow">For Gujarati Students (16-22 Years) Struggling with Exams</span>
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                <span data-i18n="hero_headline">Stop Panic Studying. Turn AI Into Your Personal 24/7 Tutor.</span>
+    <!-- 1. Hero Section -->
+    <header class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="inline-block py-1 px-4 rounded-full bg-orange-100 text-orange-700 text-sm font-bold mb-6 tracking-wide uppercase" data-i18n="hero_eyebrow">🏆 Gujarat's First Practical Gen AI Masterclass</span>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-slate-900">
+                <span class="block text-gray-500 text-2xl md:text-3xl mb-2 font-medium" data-i18n="hero_subheadline">Stop Rote Learning.</span>
+                <span data-i18n="hero_headline">Turn AI Into Your Personal 24/7 Tutor.</span>
             </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto" data-i18n="hero_description">
+                Exam Fear? Incomplete Syllabus? Hard Concepts? Learn to use AI ethically for 10X faster learning.
+            </p>
 
-             <div class="flex flex-col md:flex-row justify-center gap-4 mb-8 text-left md:text-center text-gray-700">
-                <div class="flex items-center gap-2">
-                     <span class="text-green-500">✓</span> <span data-i18n="hero_bullet1">Plan Your Entire Syllabus in Seconds</span>
-                </div>
-                 <div class="flex items-center gap-2">
-                     <span class="text-green-500">✓</span> <span data-i18n="hero_bullet2">Understand Hard Concepts Instantly</span>
-                </div>
-                 <div class="flex items-center gap-2">
-                     <span class="text-green-500">✓</span> <span data-i18n="hero_bullet3">Score Higher Without Cheating</span>
-                </div>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                <a href="#offer" class="inline-flex items-center justify-center bg-orange-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300 gap-2">
+                    <span data-i18n="hero_cta">Book Free 1-on-1 Call</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
             </div>
 
-            <a href="#offer" class="inline-block bg-orange-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition hover:-translate-y-1 mb-4" data-i18n="hero_cta">
-                Join the AI Revolution
-            </a>
-            <p class="text-sm text-gray-500" data-i18n="hero_friction">No Tech Skills Needed • 100% Ethical Study Method</p>
-            <p class="mt-4 text-xs font-semibold uppercase tracking-widest text-gray-400" data-i18n="hero_proof">6 Global Certifications in AI</p>
+            <div class="flex items-center justify-center gap-2 text-sm font-semibold text-gray-500">
+                <span class="flex -space-x-2">
+                    <div class="w-8 h-8 rounded-full bg-gray-200 border-2 border-white"></div>
+                    <div class="w-8 h-8 rounded-full bg-gray-300 border-2 border-white"></div>
+                    <div class="w-8 h-8 rounded-full bg-gray-400 border-2 border-white"></div>
+                </span>
+                <span data-i18n="hero_social_proof">Trusted by 500+ Gujarat Students</span>
+            </div>
         </div>
     </header>
 
-    <!-- 2. Lead Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-             <p class="text-orange-600 font-bold mb-4" data-i18n="lead_usps">6 Global Certifications • Trusted by Families Across Gujarat</p>
-             <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="lead_pain">Feeling overwhelmed by pending syllabus and confused by complex AI tools?</h2>
-             <p class="text-xl text-gray-600" data-i18n="lead_solution">Sarvottam AI Pathshala teaches you the specific prompts to organize your studies and clear doubts instantly.</p>
-        </div>
-    </section>
-
-    <!-- 3. Proof Section -->
-    <section class="py-16 bg-gray-50">
+    <!-- 2. Real Struggles (Problem) -->
+    <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-             <div class="grid md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="italic text-gray-600 mb-4" data-i18n="proof_review1">"Finally cleared my Physics doubts without feeling shy!"</p>
-                    <p class="font-bold text-gray-900">- Ravi P.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="italic text-gray-600 mb-4" data-i18n="proof_review2">"My study plan is now perfect. No more guilt."</p>
-                    <p class="font-bold text-gray-900">- Priya S.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <p class="italic text-gray-600 mb-4" data-i18n="proof_review3">"Best part? It's all in Gujarati context."</p>
-                    <p class="font-bold text-gray-900">- Amit K.</p>
-                </div>
-             </div>
-             <div class="flex flex-wrap justify-center gap-6 mt-8 items-center opacity-80 grayscale hover:grayscale-0 transition duration-500">
-                 <img src="assets/cert-google-leader.png" alt="Google Cloud Certified" class="h-12 object-contain">
-                 <img src="assets/cert-microsoft.png" alt="Microsoft Certified" class="h-12 object-contain">
-                 <img src="assets/cert-oracle.png" alt="Oracle Certified" class="h-12 object-contain">
-                 <img src="assets/cert-gemini-educator.png" alt="Gemini Educator" class="h-12 object-contain">
-                 <img src="assets/cert-anthropic-teaching.png" alt="Anthropic Certified" class="h-12 object-contain">
-             </div>
-        </div>
-    </section>
-
-    <!-- 4. Benefits Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12" data-i18n="benefits_headline">Master Your Studies with AI Confidence</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 bg-orange-50 rounded-2xl">
-                    <h3 class="font-bold text-orange-900 mb-2" data-i18n="benefit1_title">Instant Clarity</h3>
-                    <p class="text-orange-800 text-sm" data-i18n="benefit1_body">Breakdown complex topics into simple Gujarati.</p>
-                </div>
-                <div class="p-6 bg-orange-50 rounded-2xl">
-                    <h3 class="font-bold text-orange-900 mb-2" data-i18n="benefit2_title">Stress-Free Planning</h3>
-                    <p class="text-orange-800 text-sm" data-i18n="benefit2_body">Get a daily schedule that actually works.</p>
-                </div>
-                <div class="p-6 bg-orange-50 rounded-2xl">
-                    <h3 class="font-bold text-orange-900 mb-2" data-i18n="benefit3_title">Exam Confidence</h3>
-                    <p class="text-orange-800 text-sm" data-i18n="benefit3_body">Walk into the exam hall knowing you prepared smart.</p>
-                </div>
-                 <div class="p-6 bg-orange-50 rounded-2xl">
-                    <h3 class="font-bold text-orange-900 mb-2" data-i18n="benefit4_title">Ethical Success</h3>
-                    <p class="text-orange-800 text-sm" data-i18n="benefit4_body">Learn to use AI to build brain power, not just copy-paste.</p>
-                </div>
+            <div class="text-center mb-16">
+                <span class="text-orange-600 font-bold tracking-wider uppercase text-sm">Real Struggles</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2" data-i18n="problem_headline">Are you tired of these problems?</h2>
             </div>
-        </div>
-    </section>
 
-    <!-- 5. Power Differentiators -->
-    <section class="py-16 bg-slate-900 text-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10" data-i18n="diff_headline">Why We Are Different</h2>
-            <div class="space-y-4">
-                <div class="flex gap-4">
-                    <div class="text-orange-500 text-xl">★</div>
-                    <div>
-                        <h3 class="font-bold text-lg" data-i18n="diff1_title">Study Companion, Not Cheating</h3>
-                        <p class="text-gray-400" data-i18n="diff1_body">We teach you to learn, not just print answers.</p>
-                    </div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-orange-500 text-xl">★</div>
-                    <div>
-                        <h3 class="font-bold text-lg" data-i18n="diff2_title">Gujarati Focused</h3>
-                        <p class="text-gray-400" data-i18n="diff2_body">Tailored for local students, not generic global advice.</p>
-                    </div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-orange-500 text-xl">★</div>
-                    <div>
-                        <h3 class="font-bold text-lg" data-i18n="diff3_title">Zero Jargon</h3>
-                        <p class="text-gray-400" data-i18n="diff3_body">Simple steps. If you can use WhatsApp, you can do this.</p>
-                    </div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-orange-500 text-xl">★</div>
-                    <div>
-                        <h3 class="font-bold text-lg" data-i18n="diff4_title">One Clear System</h3>
-                        <p class="text-gray-400" data-i18n="diff4_body">Stop jumping between 10 tools. Master the right one.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. How It Works -->
-    <section class="py-16 bg-white">
-         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12" data-i18n="works_headline">3 Simple Steps to Smart Study</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="relative">
-                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-                    <h3 class="font-bold text-xl mb-2" data-i18n="works1_title">Book Consultation</h3>
-                    <p class="text-gray-600" data-i18n="works1_body">Get your free expert guidance session.</p>
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="text-4xl mb-4">😰</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="prob1_title">No Planning</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="prob1_desc">Don't know what to study all day. At night, realize the day was wasted and feel guilty.</p>
                 </div>
-                 <div class="relative">
-                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-                    <h3 class="font-bold text-xl mb-2" data-i18n="works2_title">Get The Roadmap</h3>
-                    <p class="text-gray-600" data-i18n="works2_body">Receive your personalized AI study plan.</p>
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="text-4xl mb-4">😵‍💫</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="prob2_title">AI Confusion</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="prob2_desc">Using ChatGPT, but getting long, complex English answers that are hard to understand.</p>
                 </div>
-                 <div class="relative">
-                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-                    <h3 class="font-bold text-xl mb-2" data-i18n="works3_title">Start Learning</h3>
-                    <p class="text-gray-600" data-i18n="works3_body">Apply simple prompts to boost your grades today.</p>
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="text-4xl mb-4">😨</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="prob3_title">Exam Fear</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="prob3_desc">No confidence in preparation. Relying heavily on last-minute IMP questions and friends' notes.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="text-4xl mb-4">🤐</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="prob4_title">Unsolved Doubts</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="prob4_desc">Too shy to ask teachers again. As a result, difficult topics remain unclear forever.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="text-4xl mb-4">⏱️</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="prob5_title">Wasted Time</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="prob5_desc">Spending all day searching for videos online but not finding exactly what you need.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="text-4xl mb-4">📉</div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="prob6_title">Average Marks</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed" data-i18n="prob6_desc">No improvement in results despite hard work. Lack of smart work strategies.</p>
                 </div>
             </div>
-         </div>
+        </div>
     </section>
 
-    <!-- 7. Offer Section (With Form) -->
+    <!-- 3. Solution Section -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-orange-500 font-bold tracking-wider uppercase text-sm">The Solution</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-6 leading-tight" data-i18n="sol_headline">Gujarat's First <br> <span class="text-orange-500">AI Study Coach</span></h2>
+                    <p class="text-gray-400 text-lg mb-8" data-i18n="sol_sub">We don't just teach AI tools; we give you a 'System'. A system to make AI your 24-hour companion tutor.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 text-orange-500 flex items-center justify-center font-bold text-xl flex-shrink-0">01</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white" data-i18n="sol1_title">Practical Guidance</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="sol1_desc">No complex theory. Learn exactly how to use AI in your daily studies immediately.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 text-orange-500 flex items-center justify-center font-bold text-xl flex-shrink-0">02</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white" data-i18n="sol2_title">In Gujarati Language</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="sol2_desc">Forget English stress. The entire course and methodology is in your mother tongue.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 text-orange-500 flex items-center justify-center font-bold text-xl flex-shrink-0">03</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white" data-i18n="sol3_title">Ethical Learning</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="sol3_desc">Our focus is on how to learn correctly, not on cheating for homework.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </div>
+                    <div class="relative z-10 text-center py-10">
+                         <div class="text-6xl font-bold text-orange-500 mb-2">10X</div>
+                         <h3 class="text-2xl font-bold text-white mb-6">Study Speed</h3>
+                         <p class="text-gray-300 italic text-lg mb-6">"Before, a chapter took me 5 hours to prepare. Now with AI help, I understand it in just 45 minutes."</p>
+                         <p class="text-orange-400 font-bold">— Rahul, BCA Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Curriculum (30-Day Master Plan) -->
+    <section class="py-20 bg-orange-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="bg-white text-orange-600 px-4 py-1 rounded-full text-sm font-bold shadow-sm border border-orange-100">COURSE CURRICULUM</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-4 text-slate-900" data-i18n="curr_headline">30-Day Master Plan</h2>
+                <p class="text-gray-600 mt-2" data-i18n="curr_sub">A journey that will transform your education.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Week 1 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border-l-4 border-orange-500">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <h3 class="text-xl font-bold text-slate-900" data-i18n="week1_title">WEEK 1: The Setup (Paya)</h3>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-1 rounded">FOUNDATION</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week1_1">Setting up AI Tools (ChatGPT/Gemini)</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week1_2">Prompting: The Art of Asking the Right Questions</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week1_3">Learn to command AI in Gujarati</span></li>
+                    </ul>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border-l-4 border-orange-500">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <h3 class="text-xl font-bold text-slate-900" data-i18n="week2_title">WEEK 2: Smart Study (Efficiency)</h3>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-1 rounded">SPEED</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week2_1">Daily Study Schedule Generator</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week2_2">Smart Summaries of Long Chapters (in 10 mins)</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week2_3">Understanding Hard Topics with Simple Examples</span></li>
+                    </ul>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border-l-4 border-orange-500">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <h3 class="text-xl font-bold text-slate-900" data-i18n="week3_title">WEEK 3: Personal Tutor (Deep Dive)</h3>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-1 rounded">MASTERY</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week3_1">Doubt Solving Sessions with AI</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week3_2">Professional Method for Note Taking</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week3_3">Practice Language and Math with AI</span></li>
+                    </ul>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border-l-4 border-orange-500">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <h3 class="text-xl font-bold text-slate-900" data-i18n="week4_title">WEEK 4: Exam Ready (Revision)</h3>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-1 rounded">SUCCESS</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week4_1">Automatic Quiz and Test Paper Generation</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week4_2">Last Minute Revision Planning</span></li>
+                        <li class="flex items-start gap-3"><span class="text-green-500 mt-1">✓</span> <span data-i18n="week4_3">Confidence Boosting and Paper Writing Tips</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Mentor Section -->
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 text-center">
+                    <div class="w-48 h-48 mx-auto bg-orange-100 rounded-full flex items-center justify-center text-4xl font-bold text-orange-600 border-4 border-white shadow-xl mb-6">TC</div>
+                    <h3 class="text-2xl font-bold text-slate-900">Tejas Chhatrala</h3>
+                    <p class="text-orange-600 font-medium">Your AI Guide</p>
+                    <div class="flex justify-center gap-8 mt-6">
+                        <div>
+                            <div class="text-2xl font-bold text-slate-900">8+</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-wide">Years Exp</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-slate-900">500+</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-wide">Students</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed" data-i18n="mentor_bio">
+                        "I have personally increased my productivity 10x using AI. After earning global AI certifications (Google, Microsoft, Oracle), my goal is to explain the power of technology to students in Gujarat."
+                    </p>
+                    <h4 class="font-bold text-sm uppercase text-gray-400 mb-4 tracking-wider">Global Certifications</h4>
+                    <div class="flex flex-wrap gap-4 grayscale opacity-80">
+                         <img src="assets/cert-google-leader.png" class="h-10 object-contain" alt="Google">
+                         <img src="assets/cert-microsoft.png" class="h-10 object-contain" alt="Microsoft">
+                         <img src="assets/cert-oracle.png" class="h-10 object-contain" alt="Oracle">
+                         <img src="assets/cert-gemini-educator.png" class="h-10 object-contain" alt="Gemini">
+                         <img src="assets/cert-anthropic-teaching.png" class="h-10 object-contain" alt="Anthropic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FAQ Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg mb-2 text-slate-900" data-i18n="faq1_q">Is this cheating?</h3>
+                    <p class="text-gray-600" data-i18n="faq1_a">Not at all. We teach you to use AI to understand concepts and increase learning speed, not to copy homework.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg mb-2 text-slate-900" data-i18n="faq2_q">Do I need technical knowledge?</h3>
+                    <p class="text-gray-600" data-i18n="faq2_a">No. If you know how to use WhatsApp, you can learn this easily.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg mb-2 text-slate-900" data-i18n="faq3_q">Is this for both school and college?</h3>
+                    <p class="text-gray-600" data-i18n="faq3_a">Yes. This system works for any student from 8th grade to college.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Offer & Form Section -->
     <section id="offer" class="py-20 bg-orange-600 text-white relative">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-        <div class="max-w-4xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="offer_headline">Get Your Free AI Study Consultation</h2>
-                 <div class="flex flex-col md:flex-row justify-center gap-6 mb-8 text-orange-100 font-semibold">
-                    <span data-i18n="offer_bullet1">✓ Personalized Guidance from Certified Expert</span>
-                    <span data-i18n="offer_bullet2">✓ Free "Smart Student" AI Toolkit Included</span>
-                    <span data-i18n="offer_bullet3">✓ Learn Ethical AI Habits for Life</span>
-                 </div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight" data-i18n="offer_headline">Free 1-on-1 <br> AI Study Roadmap</h2>
+            <p class="text-orange-100 text-lg mb-10 max-w-2xl mx-auto" data-i18n="offer_sub">Fill the form and get a personalized 10-minute guidance call from me.</p>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-10 text-sm font-semibold bg-orange-700/30 inline-flex px-6 py-3 rounded-full mx-auto">
+                <span class="flex items-center gap-2">✓ Study Planning Clarity</span>
+                <span class="flex items-center gap-2">✓ Best AI Tools Selection</span>
+                <span class="flex items-center gap-2">✓ Free AI Toolkit (Bonus)</span>
             </div>
 
-            <!-- Form -->
-            <div class="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl max-w-2xl mx-auto">
+            <div class="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl max-w-lg mx-auto transform transition hover:scale-105 duration-300">
                 <form id="leadForm" onsubmit="handleLead(event)" class="space-y-4">
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="studentName" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_student_name">Student Name</label>
-                            <input type="text" id="studentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_student" placeholder="e.g. Preeti Patel">
-                        </div>
-                        <div>
-                            <label for="parentName" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_parent_name">Parent Name</label>
-                            <input type="text" id="parentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_parent" placeholder="e.g. Rajesh Patel">
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_phone">Mobile Number</label>
-                            <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_phone" placeholder="98797 37819">
-                        </div>
-                        <div>
-                            <label for="city" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_city">City</label>
-                            <input type="text" id="city" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_city" placeholder="Surat">
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="grade" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_grade">Grade / Year</label>
-                            <input type="text" id="grade" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_grade" placeholder="10th / FYBCA">
-                        </div>
-                        <div>
-                            <label for="age" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_age">Age</label>
-                            <input type="number" id="age" min="8" max="40" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none" data-i18n-placeholder="placeholder_age" placeholder="15">
-                        </div>
+                    <div>
+                        <label class="block text-left text-xs font-bold text-gray-500 uppercase mb-1 ml-1" data-i18n="lbl_name">Student Name</label>
+                        <input type="text" id="studentName" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-orange-500 outline-none" placeholder="Your Name">
                     </div>
                     <div>
-                        <label for="mainStruggle" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="field_struggle">Main Struggle?</label>
-                        <select id="mainStruggle" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
-                            <option value="Planning" data-i18n="struggle_planning">Planning & Time Management</option>
-                            <option value="Concepts" data-i18n="struggle_concepts">Understanding Hard Concepts</option>
-                            <option value="Grades" data-i18n="struggle_grades">Low Grades / Exam Fear</option>
-                            <option value="AI_Confusion" data-i18n="struggle_ai">Confusion with AI Tools</option>
-                        </select>
+                        <label class="block text-left text-xs font-bold text-gray-500 uppercase mb-1 ml-1" data-i18n="lbl_whatsapp">WhatsApp Number</label>
+                        <input type="tel" id="whatsappNumber" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-orange-500 outline-none" placeholder="98797 37819">
                     </div>
-                    <div class="flex items-start gap-3 text-sm text-gray-600">
-                        <input type="checkbox" id="consent" required class="mt-1">
-                        <label for="consent" data-i18n="form_consent">I agree to be contacted on WhatsApp.</label>
+                    <div>
+                        <label class="block text-left text-xs font-bold text-gray-500 uppercase mb-1 ml-1" data-i18n="lbl_grade">Grade / Stream</label>
+                        <input type="text" id="gradeStream" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-orange-500 outline-none" placeholder="e.g. 10th / BCA / Engineering">
                     </div>
-                    <button type="submit" class="w-full bg-green-600 text-white font-bold py-4 rounded-lg hover:bg-green-700 transition flex items-center justify-center gap-2">
-                        <span data-i18n="offer_cta">Join the AI Revolution</span>
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+
+                    <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-black transition flex items-center justify-center gap-2 shadow-lg mt-4">
+                        <span data-i18n="btn_submit">Get My Free Roadmap</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                     </button>
-                    <p class="text-xs text-center text-gray-500 mt-2" data-i18n="offer_friction">Limited Spots Available</p>
+                    <p class="text-xs text-center text-red-500 font-semibold mt-3">🔥 LIMITED: Only 5 slots left for this week!</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- 8. About Team -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6" data-i18n="team_headline">Meet Your Mentor</h2>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                <div class="w-32 h-32 rounded-full bg-orange-200 text-orange-700 font-bold text-3xl flex items-center justify-center">TC</div>
-                <div class="text-left max-w-lg">
-                    <p class="text-gray-600 text-lg" data-i18n="team_bio">Tejas Chhatrala is a Google & Microsoft Certified AI Expert. He helps Gujarati students simplify technology to achieve academic success without stress. He is the calm senior friend you never had.</p>
-                </div>
+    <footer class="bg-slate-950 text-slate-500 py-10 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="text-xl font-bold text-white mb-2">Sarvottam<span class="text-orange-600">AI</span></div>
+                <p class="text-sm">Gujarat's First AI Pathshala For Students</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="tel:9879737819" class="hover:text-white transition">Call: 98797 37819</a>
+                <a href="https://wa.me/919879737819" class="hover:text-white transition">WhatsApp</a>
             </div>
         </div>
-    </section>
-
-    <!-- 9. Social Proof Intent -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10" data-i18n="intent_headline">Who Is This For?</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                 <div class="bg-white p-6 rounded-xl border-t-4 border-orange-500 shadow-sm">
-                    <h3 class="font-bold text-lg mb-2" data-i18n="intent1_title">The Overwhelmed Student</h3>
-                    <p class="text-gray-600 italic" data-i18n="intent1_quote">"So much syllabus, so little time."</p>
-                    <p class="text-green-600 font-semibold mt-2" data-i18n="intent1_result">-> We give you a plan.</p>
-                 </div>
-                 <div class="bg-white p-6 rounded-xl border-t-4 border-orange-500 shadow-sm">
-                    <h3 class="font-bold text-lg mb-2" data-i18n="intent2_title">The Confused Learner</h3>
-                    <p class="text-gray-600 italic" data-i18n="intent2_quote">"I don't understand this chapter."</p>
-                     <p class="text-green-600 font-semibold mt-2" data-i18n="intent2_result">-> AI explains it simply.</p>
-                 </div>
-                 <div class="bg-white p-6 rounded-xl border-t-4 border-orange-500 shadow-sm">
-                    <h3 class="font-bold text-lg mb-2" data-i18n="intent3_title">The Exam Worrier</h3>
-                    <p class="text-gray-600 italic" data-i18n="intent3_quote">"Will I pass?"</p>
-                     <p class="text-green-600 font-semibold mt-2" data-i18n="intent3_result">-> Practice with AI and build confidence.</p>
-                 </div>
-            </div>
+        <div class="text-center text-xs mt-8 pt-8 border-t border-slate-900">
+            &copy; 2026 Sarvottam AI Pathshala. All rights reserved.
         </div>
-    </section>
-
-    <!-- 10. FAQs -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10" data-i18n="faq_headline">Got Questions?</h2>
-            <div class="space-y-4">
-                 <div class="border border-gray-100 rounded-lg p-4">
-                    <h3 class="font-bold text-lg" data-i18n="faq1_q">Is AI cheating?</h3>
-                    <p class="text-gray-600" data-i18n="faq1_a">No, we teach you to use it as a tutor to learn concepts, not just copy answers.</p>
-                </div>
-                 <div class="border border-gray-100 rounded-lg p-4">
-                    <h3 class="font-bold text-lg" data-i18n="faq2_q">Is it too technical?</h3>
-                    <p class="text-gray-600" data-i18n="faq2_a">Not at all. It's as easy as chatting on WhatsApp.</p>
-                </div>
-                 <div class="border border-gray-100 rounded-lg p-4">
-                    <h3 class="font-bold text-lg" data-i18n="faq3_q">Will it help my grades?</h3>
-                    <p class="text-gray-600" data-i18n="faq3_a">Yes, by clearing concepts and planning better, you perform better.</p>
-                </div>
-                 <div class="border border-gray-100 rounded-lg p-4">
-                    <h3 class="font-bold text-lg" data-i18n="faq4_q">Do I need a laptop?</h3>
-                    <p class="text-gray-600" data-i18n="faq4_a">You can start with just your phone.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 11. Final Recap -->
-    <section class="py-20 bg-slate-900 text-center text-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6" data-i18n="recap_headline">Ready to Study Smart?</h2>
-            <div class="flex flex-wrap justify-center gap-4 mb-8 text-gray-300">
-                <span data-i18n="recap_bullet1">✓ Free Consultation</span>
-                <span data-i18n="recap_bullet2">✓ Certified Guidance</span>
-                <span data-i18n="recap_bullet3">✓ Proven Results</span>
-            </div>
-            <a href="#offer" class="inline-block bg-orange-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transition hover:-translate-y-1" data-i18n="recap_cta">
-                Join the AI Revolution
-            </a>
-            <p class="text-sm text-gray-500 mt-4" data-i18n="recap_friction">Take the First Step Today</p>
-        </div>
-    </section>
-
-    <footer class="bg-gray-950 text-gray-600 py-8 text-center">
-        <p>&copy; 2025 Sarvottam AI Pathshala. All rights reserved.</p>
-        <p class="text-sm mt-2" data-i18n="footer_tagline">Designed for the Future of Gujarat.</p>
     </footer>
 
     <script>
-        // Translations and logic
+        // Content Data (Primary: Mixed Gujarati/English as per reference)
         const translations = {
             gu: {
-                nav_cta: "મફત કન્સલ્ટેશન બુક કરો",
-                hero_eyebrow: "પરીક્ષાથી ડરતા ગુજરાતી વિદ્યાર્થીઓ (16-22 વર્ષ) માટે",
-                hero_headline: "હવે રટ્ટા મારવાનું બંધ. AI ને બનાવો તમારા પર્સનલ ટ્યુટર.",
-                hero_bullet1: "સેકન્ડોમાં આખા સિલેબસનું પ્લાનિંગ કરો",
-                hero_bullet2: "અઘરા વિષયોને સરળતાથી સમજો",
-                hero_bullet3: "ચીટિંગ કર્યા વગર રિઝલ્ટ સુધારો",
-                hero_cta: "AI ક્રાંતિમાં જોડાઓ",
-                hero_friction: "કોઈ ટેકનિકલ આવડત જરૂરી નથી • 100% સાચી પદ્ધતિ",
-                hero_proof: "6 આંતરરાષ્ટ્રીય AI સર્ટિફિકેટ્સ",
-                lead_usps: "6 આંતરરાષ્ટ્રીય સર્ટિફિકેટ્સ • ગુજરાતના પરિવારોનો વિશ્વાસ",
-                lead_pain: "બાકી સિલેબસનું ટેન્શન છે? અઘરા AI ટૂલ્સથી ગૂંચવણ થાય છે? માત્ર IMP પર આધાર રાખો છો?",
-                lead_solution: "સર્વોત્તમ AI પાઠશાળા તમને શીખવશે એવા ખાસ પ્રોમ્પ્ટ્સ જેનાથી તમારું ભણતર વ્યવસ્થિત અને સરળ બની જશે.",
-                proof_review1: "\"રવિ પી.: 'શરમ રાખ્યા વગર ફિઝિક્સના ડાઉટ્સ સોલ્વ થઈ ગયા!'\"",
-                proof_review2: "\"પ્રિયા એસ.: 'મારો સ્ટડી પ્લાન હવે પરફેક્ટ છે. કોઈ ટેન્શન નહીં.'\"",
-                proof_review3: "\"અમિત કે.: 'સૌથી સારી વાત? આ બધું આપણી ગુજરાતી સ્ટાઈલમાં છે.'\"",
-                proof_media: "Google Cloud Certified | Microsoft AI Certified | Oracle Certified",
-                benefits_headline: "AI ના આત્મવિશ્વાસ સાથે ભણતરમાં માસ્ટરી",
-                benefit1_title: "ઝડપી સમજણ",
-                benefit1_body: "અઘરા વિષયોને સરળ ગુજરાતીમાં સમજો.",
-                benefit2_title: "તણાવમુક્ત પ્લાનિંગ",
-                benefit2_body: "એવું ડેઈલી ટાઈમ-ટેબલ જે ખરેખર કામ કરે.",
-                benefit3_title: "પરીક્ષાનો આત્મવિશ્વાસ",
-                benefit3_body: "સ્માર્ટ તૈયારી સાથે પરીક્ષા ખંડમાં પ્રવેશો.",
-                benefit4_title: "સાચી સફળતા",
-                benefit4_body: "કોપી-પેસ્ટ કરવા નહીં, પણ બુદ્ધિ વધારવા AI વાપરો.",
-                diff_headline: "અમે કેમ અલગ છીએ",
-                diff1_title: "સાથી, ચીટિંગ નહીં",
-                diff1_body: "અમે તમને શીખવા માટે AI વાપરતા શીખવીએ છીએ.",
-                diff2_title: "ગુજરાતી વિદ્યાર્થીઓ માટે",
-                diff2_body: "આપણી જરૂરિયાત મુજબ, વિદેશી સલાહ નહીં.",
-                diff3_title: "સરળ ભાષા",
-                diff3_body: "જો તમે WhatsApp વાપરી શકો, તો આ પણ કરી શકશો.",
-                diff4_title: "એક જ સિસ્ટમ",
-                diff4_body: "10 ટૂલ્સ વચ્ચે ભટકવાનું બંધ કરો. સાચો રસ્તો પકડો.",
-                works_headline: "સ્માર્ટ સ્ટડીના 3 સરળ સ્ટેપ્સ",
-                works1_title: "કન્સલ્ટેશન બુક કરો",
-                works1_body: "તમારી ફ્રી એક્સપર્ટ ગાઈડન્સ સેશન મેળવો.",
-                works2_title: "રોડમેપ મેળવો",
-                works2_body: "તમારો પર્સનલ AI સ્ટડી પ્લાન લો.",
-                works3_title: "શીખવાનું શરૂ કરો",
-                works3_body: "આજે જ રિઝલ્ટ સુધારવા સરળ પ્રોમ્પ્ટ્સ વાપરો.",
-                offer_headline: "ફ્રી AI સ્ટડી કન્સલ્ટેશન મેળવો",
-                offer_bullet1: "✓ સર્ટિફાઈડ એક્સપર્ટનું પર્સનલ માર્ગદર્શન",
-                offer_bullet2: "✓ ફ્રી \"સ્માર્ટ સ્ટુડન્ટ\" AI ટૂલકિટ",
-                offer_bullet3: "✓ જીવનભર કામ લાગે તેવી સાચી AI આદતો",
-                offer_cta: "AI ક્રાંતિમાં જોડાઓ",
-                offer_friction: "મર્યાદિત જગ્યાઓ ઉપલબ્ધ",
-                team_headline: "તમારા મેન્ટરને મળો",
-                team_bio: "તેજસ છત્રાળા Google અને Microsoft સર્ટિફાઈડ AI એક્સપર્ટ છે. તેઓ ગુજરાતી વિદ્યાર્થીઓને ટેન્શન વગર સફળતા મેળવવા ટેકનોલોજીને સરળ બનાવે છે. તેઓ તમારા એવા મિત્ર છે જે તમને સાચું માર્ગદર્શન આપે છે.",
-                intent_headline: "આ કોના માટે છે?",
-                intent1_title: "મૂંઝાયેલા વિદ્યાર્થી",
-                intent1_quote: "\"સિલેબસ વધુ છે, સમય ઓછો.\"",
-                intent1_result: "-> અમે તમને પ્લાન આપીશું.",
-                intent2_title: "કન્ફ્યુઝડ લર્નર",
-                intent2_quote: "\"મને આ ચેપ્ટર સમજાતું નથી.\"",
-                intent2_result: "-> AI તમને સરળતાથી સમજાવશે.",
-                intent3_title: "ચિંતિત વિદ્યાર્થી",
-                intent3_quote: "\"હું પાસ થઈશ?\"",
-                intent3_result: "-> AI સાથે પ્રેક્ટિસ કરો અને આત્મવિશ્વાસ વધારો.",
-                faq_headline: "પ્રશ્નો છે?",
-                faq1_q: "શું AI ચીટિંગ છે?",
-                faq1_a: "ના, અમે તમને તે ટ્યુટર તરીકે વાપરતા શીખવીએ છીએ, કોપી કરવા નહીં.",
-                faq2_q: "શું આ અઘરું છે?",
-                faq2_a: "જરાય નહીં. WhatsApp પર વાત કરવા જેટલું જ સરળ છે.",
-                faq3_q: "શું મારા માર્ક્સ વધશે?",
-                faq3_a: "હા, કોન્સેપ્ટ ક્લિયર થવાથી અને પ્લાનિંગથી રિઝલ્ટ સુધરે છે.",
-                faq4_q: "શું લેપટોપ જોઈએ?",
-                faq4_a: "તમે તમારા મોબાઈલથી જ શરૂઆત કરી શકો છો.",
-                recap_headline: "સ્માર્ટ સ્ટડી માટે તૈયાર છો?",
-                recap_bullet1: "✓ ફ્રી કન્સલ્ટેશન",
-                recap_bullet2: "✓ સર્ટિફાઈડ ગાઈડન્સ",
-                recap_bullet3: "✓ ખાતરીપૂર્વકના પરિણામો",
-                recap_cta: "AI ક્રાંતિમાં જોડાઓ",
-                recap_friction: "આજે જ પ્રથમ પગલું ભરો",
-                footer_tagline: "Designed for the Future of Gujarat.",
-                field_student_name: "વિદ્યાર્થીનું નામ",
-                placeholder_student: "દા.ત. પ્રીતિ પટેલ",
-                field_parent_name: "વાલીનું નામ",
-                placeholder_parent: "દા.ત. રજેશ પટેલ",
-                field_phone: "મોબાઈલ નંબર",
-                placeholder_phone: "98797 37819",
-                field_city: "શહેર",
-                placeholder_city: "સુરત",
-                field_grade: "ધોરણ / વર્ષ",
-                placeholder_grade: "10th / FYBCA",
-                field_age: "ઉમર",
-                placeholder_age: "15",
-                field_struggle: "મુખ્ય મુશ્કેલી શું છે?",
-                struggle_planning: "પ્લાનિંગ અને સમય સંચાલન",
-                struggle_concepts: "અઘરા વિષયો સમજવા",
-                struggle_grades: "ઓછા માર્ક્સ / પરીક્ષાનો ડર",
-                struggle_ai: "AI ટુલ્સની સમજ નથી",
-                form_consent: "હું WhatsApp પર સંપર્ક માટે સંમતિ આપું છું."
-            },
-            en: {
-                nav_cta: "Book Free Consultation",
-                hero_eyebrow: "For Gujarati Students (16-22 Years) Struggling with Exams",
-                hero_headline: "Stop Panic Studying. Turn AI Into Your Personal 24/7 Tutor.",
-                hero_bullet1: "Plan Your Entire Syllabus in Seconds",
-                hero_bullet2: "Understand Hard Concepts Instantly",
-                hero_bullet3: "Score Higher Without Cheating",
-                hero_cta: "Join the AI Revolution",
-                hero_friction: "No Tech Skills Needed • 100% Ethical Study Method",
-                hero_proof: "6 Global Certifications in AI",
-                lead_usps: "6 Global Certifications • Trusted by Families Across Gujarat",
-                lead_pain: "Feeling overwhelmed by pending syllabus and confused by complex AI tools? relying only on IMP questions?",
-                lead_solution: "Sarvottam AI Pathshala teaches you the specific prompts to organize your studies and clear doubts instantly.",
-                proof_review1: "\"Ravi P.: 'Finally cleared my Physics doubts without feeling shy!'\"",
-                proof_review2: "\"Priya S.: 'My study plan is now perfect. No more guilt.'\"",
-                proof_review3: "\"Amit K.: 'Best part? It's all in Gujarati context.'\"",
-                proof_media: "Google Cloud Certified | Microsoft AI Certified | Oracle Certified",
-                benefits_headline: "Master Your Studies with AI Confidence",
-                benefit1_title: "Instant Clarity",
-                benefit1_body: "Breakdown complex topics into simple Gujarati.",
-                benefit2_title: "Stress-Free Planning",
-                benefit2_body: "Get a daily schedule that actually works.",
-                benefit3_title: "Exam Confidence",
-                benefit3_body: "Walk into the exam hall knowing you prepared smart.",
-                benefit4_title: "Ethical Success",
-                benefit4_body: "Learn to use AI to build brain power, not just copy-paste.",
-                diff_headline: "Why We Are Different",
-                diff1_title: "Study Companion, Not Cheating",
-                diff1_body: "We teach you to learn, not just print answers.",
-                diff2_title: "Gujarati Focused",
-                diff2_body: "Tailored for local students, not generic global advice.",
-                diff3_title: "Zero Jargon",
-                diff3_body: "Simple steps. If you can use WhatsApp, you can do this.",
-                diff4_title: "One Clear System",
-                diff4_body: "Stop jumping between 10 tools. Master the right one.",
-                works_headline: "3 Simple Steps to Smart Study",
-                works1_title: "Book Consultation",
-                works1_body: "Get your free expert guidance session.",
-                works2_title: "Get The Roadmap",
-                works2_body: "Receive your personalized AI study plan.",
-                works3_title: "Start Learning",
-                works3_body: "Apply simple prompts to boost your grades today.",
-                offer_headline: "Get Your Free AI Study Consultation",
-                offer_bullet1: "✓ Personalized Guidance from Certified Expert",
-                offer_bullet2: "✓ Free \"Smart Student\" AI Toolkit Included",
-                offer_bullet3: "✓ Learn Ethical AI Habits for Life",
-                offer_cta: "Join the AI Revolution",
-                offer_friction: "Limited Spots Available",
-                team_headline: "Meet Your Mentor",
-                team_bio: "Tejas Chhatrala is a Google & Microsoft Certified AI Expert. He helps Gujarati students simplify technology to achieve academic success without stress. He is the calm senior friend you never had.",
-                intent_headline: "Who Is This For?",
-                intent1_title: "The Overwhelmed Student",
-                intent1_quote: "\"So much syllabus, so little time.\"",
-                intent1_result: "-> We give you a plan.",
-                intent2_title: "The Confused Learner",
-                intent2_quote: "\"I don't understand this chapter.\"",
-                intent2_result: "-> AI explains it simply.",
-                intent3_title: "The Exam Worrier",
-                intent3_quote: "\"Will I pass?\"",
-                intent3_result: "-> Practice with AI and build confidence.",
-                faq_headline: "Got Questions?",
-                faq1_q: "Is AI cheating?",
-                faq1_a: "No, we teach you to use it as a tutor to learn concepts, not just copy answers.",
-                faq2_q: "Is it too technical?",
-                faq2_a: "Not at all. It's as easy as chatting on WhatsApp.",
-                faq3_q: "Will it help my grades?",
-                faq3_a: "Yes, by clearing concepts and planning better, you perform better.",
-                faq4_q: "Do I need a laptop?",
-                faq4_a: "You can start with just your phone.",
-                recap_headline: "Ready to Study Smart?",
-                recap_bullet1: "✓ Free Consultation",
-                recap_bullet2: "✓ Certified Guidance",
-                recap_bullet3: "✓ Proven Results",
-                recap_cta: "Join the AI Revolution",
-                recap_friction: "Take the First Step Today",
-                footer_tagline: "Designed for the Future of Gujarat.",
-                field_student_name: "Student Name",
-                placeholder_student: "e.g. Preeti Patel",
-                field_parent_name: "Parent Name",
-                placeholder_parent: "e.g. Rajesh Patel",
-                field_phone: "Mobile Number",
-                placeholder_phone: "98797 37819",
-                field_city: "City",
-                placeholder_city: "Surat",
-                field_grade: "Grade / Year",
-                placeholder_grade: "10th / FYBCA",
-                field_age: "Age",
-                placeholder_age: "15",
-                field_struggle: "Main Struggle?",
-                struggle_planning: "Planning & Time Management",
-                struggle_concepts: "Understanding Hard Concepts",
-                struggle_grades: "Low Grades / Exam Fear",
-                struggle_ai: "Confusion with AI Tools",
-                form_consent: "I agree to be contacted on WhatsApp."
+                nav_cta: "ફ્રી કોલ બુક કરો",
+                hero_eyebrow: "🏆 ગુજરાતમાં સૌપ્રથમ વાર: વિદ્યાર્થીઓ માટે Practical Gen AI માસ્ટરક્લાસ",
+                hero_subheadline: "ગોખવાનું છોડો,",
+                hero_headline: "AI સાથે સ્માર્ટ બનો.",
+                hero_description: "પરીક્ષાનો ડર? અધૂરો સિલેબસ? અઘરા કોન્સેપ્ટ? હવે AI ને બનાવો તમારો પર્સનલ ૨૪/૭ ટ્યુટર અને ૧૦ ગણી ઝડપે ભણો.",
+                hero_cta: "ફ્રી ૧-ઓન-૧ કોલ બુક કરો",
+                hero_social_proof: "500+ વિદ્યાર્થીઓનો ભરોસો",
+
+                problem_headline: "શું તમે પણ આ મુશ્કેલીઓથી કંટાળ્યા છો?",
+                prob1_title: "પ્લાનિંગનો અભાવ",
+                prob1_desc: "આખો દિવસ શું ભણવું એ જ નથી સમજાતું. રાત્રે ખબર પડે છે કે આખો દિવસ બગડી ગયો અને ગિલ્ટ થાય છે.",
+                prob2_title: "AI નું કન્ફ્યુઝન",
+                prob2_desc: "ChatGPT વાપરો છો, પણ તે લાંબા અને અઘરા અંગ્રેજી જવાબો આપે છે જે સમજવા મુશ્કેલ છે.",
+                prob3_title: "પરીક્ષાનો ડર",
+                prob3_desc: "પોતાના પ્રિપેરેશન પર ભરોસો નથી. છેલ્લી ઘડીએ IMP પ્રશ્નો અને મિત્રોની નોટ્સ પર નિર્ભર રહેવું પડે છે.",
+                prob4_title: "ડાઉટ્સ સોલ્વિંગ",
+                prob4_desc: "શિક્ષકોને ફરીથી પૂછતા શરમ આવે છે. પરિણામે અઘરા ટોપિક્સ ક્યારેય સમજાતા જ નથી.",
+                prob5_title: "સમયનો બગાડ",
+                prob5_desc: "ઈન્ટરનેટ પર વિડીયો શોધવામાં આખો દિવસ નીકળી જાય છે પણ જે જોઈએ છે એ નથી મળતું.",
+                prob6_title: "સરેરાશ માર્ક્સ",
+                prob6_desc: "ખૂબ મહેનત કરવા છતાં રિઝલ્ટમાં કોઈ સુધારો નથી આવતો. સ્માર્ટ વર્કનો અભાવ છે.",
+
+                sol_headline: "ગુજરાતનો સૌપ્રથમ <br> <span class='text-orange-500'>AI સ્ટડી કોચ</span>",
+                sol_sub: "અમે માત્ર AI શીખવતા નથી, અમે તમને એક 'સિસ્ટમ' આપીએ છીએ. એક એવી સિસ્ટમ જેનાથી તમે AI ને તમારો ૨૪ કલાક સાથે રહેતો ટ્યુટર બનાવી શકો.",
+                sol1_title: "પ્રેક્ટિકલ ગાઈડન્સ",
+                sol1_desc: "કોઈ જટિલ થીયરી નહીં, સીધું તમારા અભ્યાસમાં AI નો ઉપયોગ કેવી રીતે કરવો તે શીખો.",
+                sol2_title: "ગુજરાતી ભાષામાં",
+                sol2_desc: "અંગ્રેજીનું ટેન્શન ભૂલી જાઓ. આખો કોર્સ તમારી માતૃભાષા ગુજરાતીમાં છે.",
+                sol3_title: "ઈથિકલ લર્નિંગ",
+                sol3_desc: "ચીટિંગ માટે નહીં, પણ સાચું લર્નિંગ કેવી રીતે કરવું એના પર અમારો ભાર છે.",
+
+                curr_headline: "૩૦ દિવસનો માસ્ટર પ્લાન",
+                curr_sub: "તમારા ભણતરને બદલી નાખનારી સફર",
+                week1_title: "WEEK 1: પાયો (The Setup)",
+                week1_1: "AI ટૂલ્સ (ChatGPT/Gemini) નું સેટઅપ",
+                week1_2: "પ્રોમ્પટિંગ: AI ને સાચો સવાલ પૂછવાની કળા",
+                week1_3: "ગુજરાતીમાં AI ને કમાન્ડ આપતા શીખો",
+                week2_title: "WEEK 2: સ્માર્ટ સ્ટડી (Efficiency)",
+                week2_1: "ડેઈલી સ્ટડી શેડ્યુલ જનરેટર",
+                week2_2: "લાંબા ચેપ્ટર્સની સ્માર્ટ સમરી (૧૦ મિનિટમાં)",
+                week2_3: "અઘરા ટોપિક્સને સરળ ઉદાહરણોથી સમજવા",
+                week3_title: "WEEK 3: પર્સનલ ટ્યુટર (Deep Dive)",
+                week3_1: "AI પાસે ડાઉટ્સ સોલ્વિંગ સેશન",
+                week3_2: "નોટ્સ બનાવવાની પ્રોફેશનલ પદ્ધતિ",
+                week3_3: "AI સાથે ભાષા અને ગણિતની પ્રેક્ટિસ",
+                week4_title: "WEEK 4: એક્ઝામ રેડી (Revision)",
+                week4_1: "ઓટોમેટિક ક્વિઝ અને ટેસ્ટ પેપર જનરેશન",
+                week4_2: "છેલ્લી ઘડીનું રિવિઝન પ્લાનિંગ",
+                week4_3: "કોન્ફિડન્સ બૂસ્ટિંગ અને પેપર રાઈટિંગ ટિપ્સ",
+
+                mentor_bio: "મેં પોતે AI ની મદદથી મારી પ્રોડક્ટિવિટી ૧૦ ગણી વધારી છે. ગ્લોબલ લેવલના AI સર્ટિફિકેટ્સ (Google, Microsoft, Oracle) મેળવ્યા પછી મારો ધ્યેય ગુજરાતના વિદ્યાર્થીઓને ટેકનોલોજીની તાકાત સમજાવવાનો છે.",
+
+                faq1_q: "શું આ ચીટિંગ છે?",
+                faq1_a: "બિલકુલ નહીં. અમે AI નો ઉપયોગ હોમવર્ક કોપી કરવા માટે નહીં, પણ કોન્સેપ્ટ સમજવા અને લર્નિંગ સ્પીડ વધારવા માટે શીખવીએ છીએ.",
+                faq2_q: "મારે કોઈ ટેકનિકલ નોલેજની જરૂર છે?",
+                faq2_a: "ના. જો તમને WhatsApp વાપરતા આવડતું હોય, તો તમે આ આસાનીથી શીખી શકશો.",
+                faq3_q: "શું આ સ્કૂલ અને કોલેજ બંને માટે છે?",
+                faq3_a: "હા. ૮મા ધોરણથી લઈને કોલેજના કોઈપણ વિદ્યાર્થી માટે આ સિસ્ટમ કારગર છે.",
+
+                offer_headline: "ફ્રી ૧-ઓન-૧ <br> AI સ્ટડી રોડમેપ",
+                offer_sub: "ફોર્મ ભરો અને મારા તરફથી ૧૦ મિનિટનો પર્સનલાઈઝ્ડ ગાઈડન્સ કોલ મેળવો.",
+                lbl_name: "Student Name",
+                lbl_whatsapp: "WhatsApp Number",
+                lbl_grade: "Grade / Stream",
+                btn_submit: "Get My Free Roadmap"
             }
         };
 
@@ -542,70 +417,24 @@
                     node.innerHTML = translations[lang][key];
                 }
             });
-            const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
-            placeholders.forEach((node) => {
-                const key = node.getAttribute('data-i18n-placeholder');
-                if (translations[lang] && translations[lang][key]) {
-                    node.setAttribute('placeholder', translations[lang][key]);
-                }
-            });
         };
 
-        document.getElementById('langGu').addEventListener('click', () => {
-            setLanguage('gu');
-            document.getElementById('langGu').classList.add('bg-orange-100');
-            document.getElementById('langEn').classList.remove('bg-orange-100');
-        });
-        document.getElementById('langEn').addEventListener('click', () => {
-            setLanguage('en');
-            document.getElementById('langEn').classList.add('bg-orange-100');
-            document.getElementById('langGu').classList.remove('bg-orange-100');
-        });
-
-        const leadWebhookUrl = "";
+        // Initialize with Gujarati
+        setLanguage('gu');
 
         function handleLead(e) {
             e.preventDefault();
             const studentName = document.getElementById('studentName').value;
-            const parentName = document.getElementById('parentName').value;
-            const phone = document.getElementById('phone').value;
-            const city = document.getElementById('city').value;
-            const grade = document.getElementById('grade').value;
-            const age = document.getElementById('age').value;
-            const mainStruggle = document.getElementById('mainStruggle').value;
+            const whatsappNumber = document.getElementById('whatsappNumber').value;
+            const gradeStream = document.getElementById('gradeStream').value;
 
-            const payload = {
-                studentName,
-                parentName,
-                phone,
-                city,
-                grade,
-                age,
-                mainStruggle,
-                submittedAt: new Date().toISOString()
-            };
-
-            if (leadWebhookUrl) {
-                fetch(leadWebhookUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-            }
-
-            const lang = document.documentElement.lang === 'en' ? 'en' : 'gu';
-            const messageGu = `નમસ્તે! હું ${studentName} છું, ${city} થી. મારે AI સ્ટડી કિટ જોઈએ છે. ધોરણ/વર્ષ: ${grade}, મુશ્કેલી: ${mainStruggle}. Parent: ${parentName}.`;
-            const messageEn = `Hello! I am ${studentName} from ${city}. I want the AI Study Kit. Grade/Year: ${grade}, Struggle: ${mainStruggle}. Parent: ${parentName}.`;
-            const message = lang === 'en' ? messageEn : messageGu;
-
+            // WhatsApp Redirection
+            const message = `Hi Tejas, I want a Free AI Study Roadmap.\nName: ${studentName}\nGrade: ${gradeStream}`;
             const encodedMsg = encodeURIComponent(message);
             const myNumber = "919879737819";
             const whatsappURL = `https://wa.me/${myNumber}?text=${encodedMsg}`;
             window.location.href = whatsappURL;
         }
-
-        // Initialize
-        setLanguage('gu');
     </script>
 </body>
 </html>
